@@ -1,0 +1,17 @@
+tree-sitter/tree-sitter#2012
+sogaiu/tree-sitter-clojure#32
+
+$ git clone https://github.com/sogaiu/tree-sitter-issue-2012
+$ cd tree-sitter-issue-2012
+
+# uses 4387e44b
+$ sh build-repro.sh
+$ ./main-repro > repro.out
+
+# uses e1592fb1 (amaanq:first-child-for-byte-nested-hidden)
+$ sh build-with-pr-3570.sh
+$ ./main-with-pr-3570 > with-pr-3570.out
+
+$ diff repro.out with-pr-3570.out
+$ echo $?
+0
