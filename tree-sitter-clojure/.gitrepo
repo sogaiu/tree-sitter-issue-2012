@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/sogaiu/tree-sitter-clojure
+	branch = master
+	commit = f4236d4da8aa92bc105d9c118746474c608e6af7
+	parent = 46a9e0b2afdca4e61be73d1e86dc9f7f2db12e5f
+	method = merge
+	cmdver = 0.4.9
