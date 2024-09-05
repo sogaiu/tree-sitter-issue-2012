@@ -13,5 +13,10 @@ $ sh build-with-pr-3570-fcdf674.sh
 $ ./main-with-pr-3570-fcdf674 > with-pr-3570-fcdf674.out
 
 $ diff repro.out with-pr-3570-fcdf674.out
-$ echo $?
-0
+19,20c19,20
+< Child at 9 is null
+< Child at 10 is null
+---
+> Child at 9 is map_lit (map_lit value: (sym_lit name: (sym_name)) value: (sym_lit name: (sym_name)) value: (num_lit))
+> Child at 10 is map_lit (map_lit value: (sym_lit name: (sym_name)) value: (sym_lit name: (sym_name)) value: (num_lit))
+
