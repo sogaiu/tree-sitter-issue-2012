@@ -8,10 +8,10 @@ $ cd tree-sitter-issue-2012
 $ sh build-repro.sh
 $ ./main-repro > repro.out
 
-# uses e1592fb1 (amaanq:first-child-for-byte-nested-hidden)
-$ sh build-with-pr-3570.sh
-$ ./main-with-pr-3570 > with-pr-3570.out
+# uses fcdf674 (amaanq:first-child-for-byte-nested-hidden)
+$ sh build-with-pr-3570-fcdf674.sh
+$ ./main-with-pr-3570-fcdf674 > with-pr-3570-fcdf674.out
 
-$ diff repro.out with-pr-3570.out
+$ diff repro.out with-pr-3570-fcdf674.out
 $ echo $?
 0
